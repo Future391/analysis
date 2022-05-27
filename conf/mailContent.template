@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title></title>
+</head>
+<body>
+<h2>
+    1.基本信息
+</h2>
+<table border="1" cellspacing="0">
+    <tbody>
+        <tr class="firstRow">
+            <td width="142" valign="middle" style="word-break: break-all;" height="3" align="center">
+                主机
+            </td>
+            <td width="237" valign="middle" style="word-break: break-all;" height="3" align="center">
+                <span style="text-align: -webkit-center;">host</span>
+            </td>
+        </tr>
+        <tr>
+            <td width="142" valign="middle" style="word-break: break-all;" align="center">
+                模块
+            </td>
+            <td width="237" valign="middle" style="word-break: break-all;" align="center">
+                <span style="text-align: -webkit-center;">centerCode</span>
+            </td>
+        </tr>
+        <tr>
+            <td width="142" valign="middle" style="word-break: break-all;" align="center">
+                进程标识
+            </td>
+            <td width="237" valign="middle" style="word-break: break-all;" align="center">
+                <span style="text-align: -webkit-center;">processCode</span>
+            </td>
+        </tr>
+        <tr>
+            <td width="142" valign="middle" style="word-break: break-all;" align="center">
+                进程Id
+            </td>
+            <td width="237" valign="middle" style="word-break: break-all;" align="center">
+                <span style="text-align: -webkit-center;">processId</span>
+            </td>
+		</tr>
+        <tr>
+            <td valign="middle" colspan="1" rowspan="1" style="word-break: break-all;" width="142" align="center">
+                进程启动时间
+            </td>
+            <td valign="middle" colspan="1" rowspan="1" width="237" align="center" style="word-break: break-all;">
+                lstart
+            </td>
+        </tr>
+        <tr>
+            <td width="142" valign="middle" style="word-break: break-all;" align="center">
+                进程运行时长
+            </td>
+            <td width="237" valign="middle" align="center" style="word-break: break-all;">
+                etime
+            </td>
+        </tr>
+    </tbody>
+</table>
+<br/>
+<h2>
+    2.监控告警信息
+</h2>
+<p>
+    <span style="font-size: 13px;">注：有些模块可能不包含某些监控指标，统计结果为空属于正常现象。</span><br/>
+</p>
+<table data-sort="sortDisabled" border="1" cellspacing="0">
+    <tbody>
+        <tr class="firstRow">
+            <td width="105" valign="middle" style="word-break: break-all;background-color: rgb(0, 176, 80);" align="center" height="21">
+                <strong><span style="color: rgb(255, 255, 255);">监控类型</span></strong>
+            </td>
+            <td width="183" valign="middle" style="word-break: break-all;background-color: rgb(0, 176, 80);" align="center" height="21">
+                <strong><span style="color: rgb(255, 255, 255);">监控指标</span></strong>
+            </td>
+            <td width="170" valign="middle" style="word-break: break-all;background-color: rgb(0, 176, 80);" align="center" height="21">
+                <strong><span style="color: rgb(255, 255, 255);">统计结果</span></strong>
+            </td>
+            <td width="143" valign="middle" style="word-break: break-all;background-color: rgb(0, 176, 80);" align="center" height="21">
+                <strong><span style="color: rgb(255, 255, 255);">告警阈值</span></strong>
+            </td>
+            <td width="134" valign="middle" style="word-break: break-all;background-color: rgb(0, 176, 80);" align="center" height="21">
+                <strong><span style="color: rgb(255, 255, 255);">备注</span></strong>
+            </td>
+        </tr>
+        <tr>
+            <td valign="middle" align="center" colspan="1" rowspan="6" width="104" style="word-break: break-all;">
+                进程
+            </td>
+            <td valign="middle" align="center" colspan="1" rowspan="1" style="word-break: break-all;" width="183">
+                进程数
+            </td>
+            <td valign="middle" align="center" colspan="1" rowspan="1" style="word-break: break-all;" width="170">
+                processExistRes
+            </td>
+            <td valign="middle" align="center" colspan="1" rowspan="1" style="word-break: break-all;" width="143">
+                不等于1
+            </td>
+            <td valign="middle" align="center" colspan="1" rowspan="1" width="134" style="word-break: break-all;">
+                processExistFlag
+            </td>
+        </tr>
+        <tr>
+            <td width="105" valign="middle" style="word-break: break-all;" align="center">
+                老年代内存占比
+            </td>
+            <td width="183" valign="middle" align="center" style="word-break: break-all;">
+                OGRateRes
+            </td>
+            <td width="117" valign="middle" align="center" style="word-break: break-all;">
+                大于OGThreshold
+            </td>
+            <td width="143" valign="middle" align="center" style="word-break: break-all;">
+                OGRateFlag
+            </td>
+        </tr>
+        <tr>
+            <td width="105" valign="middle" style="word-break: break-all;" align="center">
+                永久代(方法区)内存占比
+            </td>
+            <td width="183" valign="middle" align="center" style="word-break: break-all;">
+                PGRateRes
+            </td>
+            <td width="117" valign="middle" align="center" style="word-break: break-all;">
+                大于PGThreshold
+            </td>
+            <td width="143" valign="middle" align="center" style="word-break: break-all;">
+                PGRateFlag
+            </td>
+        </tr>
+        <tr>
+            <td width="105" valign="middle" style="word-break: break-all;" align="center">
+                资源类实例
+            </td>
+            <td width="183" valign="middle" align="center" style="word-break: break-all;">
+                resourceInsRes
+            </td>
+            <td width="117" valign="middle" align="center" style="word-break: break-all;">
+                大于resourceInsNum
+            </td>
+            <td width="143" valign="middle" align="center" style="word-break: break-all;">
+                resourceInsFlag
+            </td>
+        </tr>
+        <tr>
+            <td width="105" valign="middle" style="word-break: break-all;" align="center">
+                打开文件数
+            </td>
+            <td width="183" valign="middle" align="center" style="word-break: break-all;">
+                openFilesRes
+            </td>
+            <td width="117" valign="middle" align="center" style="word-break: break-all;">
+                大于openFilsThreshold
+            </td>
+            <td width="143" valign="middle" align="center" style="word-break: break-all;">
+                openFilesFlag
+            </td>
+        </tr>
+        <tr>
+            <td width="105" valign="middle" style="word-break: break-all;" align="center">
+                CPU使用率
+            </td>
+            <td width="183" valign="middle" align="center" style="word-break: break-all;">
+                cpuUsageRes
+            </td>
+            <td width="117" valign="middle" align="center" style="word-break: break-all;">
+                大于cpuUsageThreshold
+            </td>
+            <td width="143" valign="middle" align="center" style="word-break: break-all;">
+                cpuUsageFlag
+            </td>
+        </tr>
+        <tr>
+            <td width="105" valign="middle" rowspan="4" colspan="1" style="word-break: break-all;" align="center">
+                线程
+            </td>
+            <td width="183" valign="middle" style="word-break: break-all;" align="center">
+                线程池
+            </td>
+            <td width="170" valign="middle" align="center" style="word-break: break-all;">
+                threadPoolRes
+            </td>
+            <td width="143" valign="middle" align="center" style="word-break: break-all;">
+                线程池满
+            </td>
+            <td width="134" valign="middle" align="center" style="word-break: break-all;">
+                threadPoolFlag
+            </td>
+        </tr>
+        <tr>
+            <td width="105" valign="middle" style="word-break: break-all;" align="center">
+                线程死锁
+            </td>
+            <td width="183" valign="middle" align="center" style="word-break: break-all;">
+                deadLockRes
+            </td>
+            <td width="117" valign="middle" align="center" style="word-break: break-all;">
+                线程死锁
+            </td>
+            <td width="143" valign="middle" align="center" style="word-break: break-all;">
+                deadLockFlag
+            </td>
+        </tr>
+        <tr>
+            <td valign="middle" colspan="1" rowspan="1" style="word-break: break-all;" width="105" align="center">
+                IN_NATIVE业务线程占比
+            </td>
+            <td valign="middle" colspan="1" rowspan="1" width="183" align="center" style="word-break: break-all;">
+                inNativeRateRes
+            </td>
+            <td valign="middle" colspan="1" rowspan="1" align="center" width="117" style="word-break: break-all;">
+                大于threadThreshold
+            </td>
+            <td valign="middle" colspan="1" rowspan="1" align="center" width="143" style="word-break: break-all;">
+                inNativeRateFlag
+            </td>
+        </tr>
+        <tr>
+            <td valign="middle" colspan="1" rowspan="1" style="word-break: break-all;" width="105" align="center">
+                BLOCKED业务线程占比
+            </td>
+            <td valign="middle" colspan="1" rowspan="1" width="183" align="center" style="word-break: break-all;">
+                blockedRateRes
+            </td>
+            <td valign="middle" colspan="1" rowspan="1" align="center" width="117" style="word-break: break-all;">
+                大于threadThreshold
+            </td>
+            <td valign="middle" colspan="1" rowspan="1" align="center" width="143" style="word-break: break-all;">
+                blockedRateFlag
+            </td>
+        </tr>
+        <tr>
+            <td width="105" valign="middle" style="word-break: break-all;" align="center">
+                XXX服务
+            </td>
+            <td width="183" valign="middle" style="word-break: break-all;" align="center">
+                XXX接口调用测试
+            </td>
+            <td width="170" valign="middle" align="center" style="word-break: break-all;">
+                csfApiDebugRes
+            </td>
+            <td width="143" valign="middle" align="center" style="word-break: break-all;">
+                接口异常
+            </td>
+            <td width="134" valign="middle" align="center" style="word-break: break-all;">
+                csfApiDebugFlag
+            </td>
+        </tr>
+    </tbody>
+</table>
+</body>
+</html>
